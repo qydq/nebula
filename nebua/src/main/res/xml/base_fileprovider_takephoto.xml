@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--对应Context.getFilesDir()-/data/data/<application package>/files目录。-->
+        <file-path
+            name="an"
+            path="Android/data/com/nebula" />
+        <files-path
+            name="images"
+            path="picture/" />
+        <files-path
+            name="an"
+            path="docs/" />
+
+<!--        File imagePath = new File(Context.getFilesDir(), "picture");//创建picture目录
+        File newFile = new File(imagePath, "default_image.jpg");//新文件
+        Uri contentUri = getUriForFile(getContext(), "com.mydomain.fileprovider", newFile);//安全的Uri
+
+        打印后Uri=content://com.nebula.fileprovider/images/default_image.jpg-->
+
+        <!--对应getCacheDir()-/data/data/<application package>/cache目录。-->
+        <cache-path
+            name="cache_file"
+            path="data/data/com.nebula" />
+        <!--Environment.getExternalStorageDirectory()-->
+        <external-path
+            name="files_root"
+            path="Android/data/data/com/nebula" />
+        <!--对应Context#getExternalFilesDir(String) Context.getExternalFilesDir(null)-SDCard/Android/data/你的应用的包名/files/-->
+        <external-files-path
+            name="name"
+            path="path" />
+        <!--对应Context.getExternalCacheDir()-SDCard/Android/data/你的应用包名/cache/目录。-->
+        <external-cache-path
+            name="name"
+            path="path" />
+        <root-path
+            name="an_ytips"
+            path="" />
+
+    </paths>
+</resources>

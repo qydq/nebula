@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/CommDimenLine"
+    android:orientation="horizontal">
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/DimenNativeNational"
+        android:layout_height="@dimen/CommDimenLine" />
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/CommDimenLine"
+        android:background="@color/color_item_normal" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anLlHeadView"
+    android:layout_width="200dp"
+    android:layout_height="180dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/in_shape_dialog_progress">
+
+    <ImageView
+        android:id="@+id/ivCancle"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ease_search_clear_pressed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivCancle">
+
+        <TextView
+            android:id="@+id/anDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="嘿Bro～发现新版本!"
+            android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/anProgressUpdateBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/anDialogTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anDialogTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="有新的软件更新，请更新。*下载成功后apk文件在an/apk中。如果没有自动安装请手动安装" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@drawable/in_drawable_selector_shadow"
+            android:orientation="horizontal" />
+        <TextView
+            android:id="@+id/anDialogConfig"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="下载"
+            android:background="@color/ColorBlueviolet"
+            android:textColor="@color/CommColorWhite"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

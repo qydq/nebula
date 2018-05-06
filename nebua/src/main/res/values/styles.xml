@@ -1,0 +1,325 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="anBackground">@android:color/white</item>
+        <item name="anTextColor">@android:color/black</item>
+        <item name="anBarBackground">@android:color/black</item>
+    </style>
+    <!-- Base Parallax application theme. -->
+    <style name="ParallaxAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Right</item>
+    </style>
+
+    <style name="NoBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorTransparent</item>
+        <item name="colorPrimaryDark">@color/color_item_normal</item><!--状态栏颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="anTextColor">@color/ColorTransparent</item>
+        <item name="anBarBackground">@color/ColorTransparent</item>
+        <item name="anBackground">@android:color/white</item>
+    </style>
+
+    <style name="AnAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="anBackground">@android:color/white</item>
+        <item name="anTextColor">@android:color/black</item>
+        <item name="anBarBackground">@android:color/black</item>
+        <!--Required滑动透明背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <!--白天主题，此处直接和AppTheme一样-->
+    <style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ColorTransparent</item>
+        <item name="colorPrimaryDark">@color/CommColorDayBarBackground</item>
+        <item name="colorAccent">@color/CommColorDayBarBackground</item>
+        <item name="anBackground">@drawable/in_drawable_bgday_shape</item>
+        <item name="anTextColor">@color/CommColorDayTxtTitle</item>
+        <item name="anTextColorClick">@color/CommColorNightTxtTitle</item>
+        <item name="anBarBackground">@color/CommColorDayBarBackground</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!--夜间主题-->
+    <style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ColorTransparent</item>
+        <item name="colorPrimaryDark">@color/CommColorNightBarBackground</item>
+        <item name="colorAccent">@color/CommColorNightBarBackground</item>
+        <item name="anBackground">@drawable/in_drawable_bgnigt_shape</item>
+        <item name="anBarBackground">@color/CommColorNightBarBackground</item>
+        <item name="anTextColor">@color/CommColorNightTxtTitle</item>
+        <item name="anTextColorClick">@color/CommColorDayTxtTitle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="AnDayNightFontMMax">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font19</item>
+    </style>
+
+    <style name="AnDayNightFontMax">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font17</item>
+    </style>
+
+    <style name="AnDayNightFontTip">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font15</item>
+    </style>
+
+    <style name="AnDayNightFont">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font13</item>
+    </style>
+
+    <style name="AnDayNightFontSmall">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font11</item>
+    </style>
+
+    <style name="AnDayNightFontSSmall">
+        <item name="android:textColor">?attr/anTextColor</item>
+        <item name="android:textSize">@dimen/SP_Font9</item>
+    </style>
+
+    <style name="AnTvFontNavacation">
+        <item name="android:textSize">@dimen/SP_Font9</item>
+    </style>
+
+    <style name="ToolbarDayNightTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">13sp</item>
+        <!-- 设置 toolbar 溢出菜单的文字的颜色 -->
+        <item name="android:textColor">@color/in_color_selector_txt_daynight</item>
+        <!-- 设置 显示在toobar上菜单文字的颜色 -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <!-- 自定义 custom loading dialog create -->
+    <style name="AnDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/base_drawable_loading</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- 自定义 custom loading dialog -->
+    <style name="AnProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">#ffE91E63</item>
+    </style>
+    <!--loding自定义dialog-->
+    <style name="AnSimpleProgressDialog" parent="@style/AnSimpleDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AnListDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+    <!-- 自定义dialog -->
+    <style name="AnSimpleDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!-- 自定义 通用字体内容的颜色 -->
+    <style name="AnTvContentStyle">
+        <item name="android:textColor">@color/CommColorTxtContent</item>
+        <item name="android:textSize">@dimen/CommDimenTxtContext</item>
+    </style>
+    <!-- 自定义 通用字体主色的颜色 -->
+    <style name="AnTvTitleStyle">
+        <item name="android:textColor">@color/CommColorTxtTitle</item>
+        <item name="android:textSize">@dimen/CommDimenTxtTitle</item>
+    </style>
+
+    <declare-styleable name="AnSlidingDeleteListView">
+        <attr name="anButtonID" format="reference" />
+        <attr name="anEnableSliding" format="boolean" />
+    </declare-styleable>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">40dp</item>
+        <item name="maxWidth">40dp</item>
+        <item name="minHeight">40dp</item>
+        <item name="maxHeight">40dp</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">72dp</item>
+        <item name="maxWidth">72dp</item>
+        <item name="minHeight">72dp</item>
+        <item name="maxHeight">72dp</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">36dp</item>
+        <item name="maxWidth">36dp</item>
+        <item name="minHeight">36dp</item>
+        <item name="maxHeight">36dp</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <!--基础style-->
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchAuto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="AutoMatch">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapAuto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="AutoWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AutoMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AutoMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AutoWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AutoWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchOne">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="OneMatch">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/CommBgPickerViewColor</item>
+    </style>
+
+    <style name="Animation_Right">
+        <item name="android:activityOpenEnterAnimation">@anim/pl_slide_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/pl_slide_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pl_slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/pl_slide_out_to_right</item>
+    </style>
+</resources>

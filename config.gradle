@@ -1,0 +1,82 @@
+/*完成既定任务：AR20180109QQY*/
+ext {
+    supportLibrary = '27.0.2'
+
+    plugins = [
+            library    : 'com.android.library',
+            application: 'com.android.application',
+            maven      : 'com.github.dcendents.android-maven',
+            bintray    : 'com.qydq.bintray'
+    ]
+
+    android = [
+            applicationId    : "com.qy",
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+
+            versionCode      : 1,
+            versionName      : "1.1.4",
+    ]
+
+    bintray = [
+            version       : "1.1.4",
+
+            siteUrl       : 'https://github.com/qydq/Integrate',
+            gitUrl        : 'git@github.com:qydq/Integrate.git',
+
+            group         : "com.nebula",
+
+            // project
+            packaging     : 'aar',
+            name          : 'Integrate',
+            description   : 'Integrate For Android',
+
+            // project.license
+            licenseName   : 'The Apache Software License, Version 2.0',
+            licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+
+            // project.developers
+            developerId   : 'qydq',
+            developerName : 'qydq',
+            developerEmail: 'qyddai@163.com',
+
+            // bintray
+            binrayLibrary : "recyclerview-swipe",
+            bintrayRepo   : "maven",
+            bintrayUser   : 'yolanda',
+            bintrayLicense: "Apache-2.0"
+    ]
+
+    dependencies = [
+            /*项目本身的东西*/
+            testrunner         : 'com.android.support.test:runner:1.0.1',
+            testespresso       : 'com.android.support.test.espresso:espresso-core:3.0.1',
+            testjunit          : 'junit:junit:4.12',
+            /*开发种必备的recyclerview的依赖库*/
+            appcompat          : 'com.android.support:appcompat-v7:27.0.2',
+            /*建议使用约束布局开发，减少布局颜色深度*/
+            constraint         : 'com.android.support.constraint:constraint-layout:1.0.2',
+            design             : 'com.android.support:design:27.0.2',
+            recyclerview       : 'com.android.support:recyclerview-v7:27.0.2',
+            retrofit           : 'com.squareup.retrofit2:retrofit:2.3.0',
+            gson               : 'com.squareup.retrofit2:converter-gson:2.1.0',
+            // compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+            // 针对rxjava2.x（adapter-rxjava2的版本要 >= 2.2.0）
+            rxjava2            : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+            okhttp             : 'com.squareup.okhttp3:okhttp:3.8.1',
+            glide              : 'com.github.bumptech.glide:glide:4.3.1',
+            /*暂时加入xutils让编译通过*/
+            xutils             : 'org.xutils:xutils:3.5.0',
+            glidecompiler      : 'com.github.bumptech.glide:compiler:4.3.1',
+
+            /*takePhoto 模块依赖的编译库*/
+            multipleimageselect: 'com.darsh.multipleimageselect:multipleimageselect:1.0.4',
+            crop               : 'com.soundcloud.android.crop:lib_crop:1.0.0',
+            advancedluban      : 'me.shaohui.advancedluban:library:1.3.2',
+            /*databinding*/
+            nineoldandroids    : 'com.nineoldandroids:library:2.4.0',
+    ]
+}
